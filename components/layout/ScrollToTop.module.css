@@ -1,0 +1,43 @@
+.btn-div {
+  position: relative;
+  transition: all 1s ease-in-out;
+}
+
+.btn-position {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  z-index: 20;
+}
+
+.btn-style {
+  color: #0a9e01;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn-style:hover {
+  color: #15803d;
+}
+
+.active {
+  opacity: 1;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+@media (max-width: 640px) {
+  .btn-style {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+
+  .btn-position {
+    right: 7.5px;
+    z-index: 999;
+  }
+}

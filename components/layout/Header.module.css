@@ -1,0 +1,159 @@
+.container {
+  width: 85rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  display: none;
+}
+
+.nav {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.25rem;
+  align-items: center;
+}
+
+.nav > li {
+  line-height: 90px;
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+}
+
+.nav > li > button {
+  border: none;
+  background-color: white;
+  font-size: inherit;
+}
+
+.nav > li:hover,
+.nav > li:hover button {
+  color: #0a9e01;
+  background-color: #f1f5f9;
+}
+
+.nav > li > a,
+.nav > li > button {
+  position: relative;
+  display: block;
+  line-height: 90px;
+  padding: 0 0.75rem;
+  cursor: pointer;
+}
+
+.nav > li > a::before,
+.nav > li > button::before {
+  content: '';
+  display: block;
+  width: 20%;
+  height: 3px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background-color: #0a9e01;
+  opacity: 0;
+}
+
+.nav > li > a:hover:before,
+.nav > li > button:hover::before {
+  width: 100%;
+  opacity: 1;
+}
+
+.logo {
+  font-size: 3rem;
+  cursor: pointer;
+  font-family: 'Heebo', sans-serif;
+  line-height: 90px;
+}
+
+.logo span {
+  color: #0a9e01;
+  margin-left: -0.15rem;
+}
+
+@media (max-width: 1750px) {
+  .container {
+    width: 68.5%;
+  }
+
+  .logo {
+    font-size: 2.75rem;
+  }
+}
+
+@media (max-width: 1550px) {
+  .container {
+    width: 73.5%;
+  }
+
+  .logo {
+    font-size: 3rem;
+  }
+
+  .nav li,
+  .logo,
+  .nav > li > a,
+  .nav > li > button {
+    line-height: 70px;
+  }
+
+  .nav > li > a {
+    font-size: 1.35rem;
+  }
+}
+
+@media (max-width: 1280px) {
+  .container {
+    width: 78.5%;
+  }
+
+  .logo {
+    font-size: 2.75rem;
+  }
+
+  .nav {
+    font-size: 1.15rem;
+  }
+
+  .nav li,
+  .logo,
+  .nav > li > a,
+  .nav > li > button {
+    line-height: 60px;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .logo {
+    line-height: 1.2;
+    font-size: 3.5rem;
+  }
+
+  .nav > li > a,
+  .nav > li,
+  .nav > li > button {
+    line-height: 1.5;
+  }
+}

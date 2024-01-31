@@ -1,0 +1,90 @@
+.container {
+  width: 65rem;
+  margin: 0 auto;
+  background-color: white;
+  border: 1px solid #dedede;
+  padding: 1rem;
+  box-shadow: 0px 0px 10px 1px rgba(0 0 0 / 10%);
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.heading-section {
+  position: relative;
+  margin: -1rem -1rem 0 -1rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.heading-section h2 {
+  color: #0a9e01;
+  font-size: 1.15rem;
+}
+
+.heading-section::after {
+  background-color: #0a9e01;
+  content: '';
+  height: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: inline-block;
+  transition: 0.35s cubic-bezier(0.39, 0.58, 0.57, 1) 0s;
+}
+
+.heading-section::before {
+  content: '';
+  display: inline-block;
+  height: 1px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: #ededed;
+}
+
+.comments-div {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.count {
+  font-size: 1rem;
+  color: gray;
+}
+
+.comments {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media (max-width: 640px) {
+  .container {
+    width: 100%;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .comments {
+    margin-top: 1.5rem;
+  }
+
+  .heading-section h2 {
+    color: #0a9e01;
+    font-size: 1.75rem;
+  }
+
+  .count {
+    font-size: 1.5rem;
+  }
+}

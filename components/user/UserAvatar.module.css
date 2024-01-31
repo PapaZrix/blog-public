@@ -1,0 +1,11 @@
+.container {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  height: 100%;
+  width: 100%;
+  border-radius: 9999px;
+}
+
+.image {
+  border-radius: 9999px;
+}

@@ -1,0 +1,214 @@
+.featured {
+  overflow: hidden;
+  position: relative;
+  border-radius: 0.5rem;
+}
+
+.featured:hover .featuredPost,
+.featured:focus .featuredPost {
+  transform: scale(1.05);
+}
+
+.featured:hover .hover-text {
+  opacity: 1;
+}
+
+.featured:hover .hover-text::before {
+  display: block;
+}
+
+.featuredPost:hover .title {
+  opacity: 0;
+}
+
+.count {
+  height: 28px;
+  width: 27px;
+  position: absolute;
+  top: 0.5rem;
+  left: 1rem;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all ease-in-out 0.5s;
+}
+
+.count p {
+  text-align: center;
+  height: 100%;
+}
+
+.featuredPost {
+  transition: all ease-in-out 0.5s;
+  /* height: 360px; */
+  /* height: 20rem; */
+  aspect-ratio: 16/9;
+  position: relative;
+  padding: 1.5rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  backface-visibility: hidden;
+  will-change: transform;
+}
+
+.featuredPost::before {
+  content: '';
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(52, 73, 94, 0.9);
+  z-index: 100;
+}
+
+.featured:hover .featuredPost::before {
+  display: block;
+}
+
+.featured:first-child .featuredPost::after {
+  background: linear-gradient(135deg, #292484, #dc4225);
+  background-size: 500% 500%;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: all 0.35s ease;
+  animation: radiate 5.5s ease-in-out infinite alternate;
+  opacity: 0.5;
+}
+
+.featured:nth-child(2) .featuredPost::after {
+  background: linear-gradient(135deg, #1a2980, #26d0ce);
+  background-size: 500% 500%;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: all 0.35s ease;
+  animation: radiate 5.5s ease-in-out infinite alternate;
+  opacity: 0.5;
+}
+
+.featured:nth-child(3) .featuredPost::after {
+  background: linear-gradient(135deg, #1d976c, #3cf93d);
+  background-size: 500% 500%;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: all 0.35s ease;
+  animation: radiate 5.5s ease-in-out infinite alternate;
+  opacity: 0.5;
+}
+
+.featured:last-child .featuredPost::after {
+  background: linear-gradient(135deg, #ff4f39, #dd0098);
+  background-size: 500% 500%;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: all 0.35s ease;
+  animation: radiate 5.5s ease-in-out infinite alternate;
+  opacity: 0.5;
+}
+
+.title {
+  font-size: 1.75rem;
+  padding: 0.5rem;
+  color: white;
+  position: absolute;
+  bottom: 1rem;
+  opacity: 1;
+  transition: all ease-out 0.4s;
+  backface-visibility: hidden;
+  will-change: transform;
+  z-index: 100;
+}
+
+.hover-text {
+  opacity: 0;
+  position: absolute;
+  padding: 2rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: white;
+  transition: all ease-in-out 0.8s;
+  width: 100%;
+  text-align: center;
+  backface-visibility: hidden;
+  will-change: transform;
+  z-index: 100;
+}
+
+@keyframes radiate {
+  0% {
+    opacity: 0.15;
+  }
+
+  20% {
+    opacity: 0.2;
+  }
+
+  40% {
+    opacity: 0.28;
+  }
+
+  60% {
+    opacity: 0.35;
+  }
+
+  80% {
+    opacity: 0.42;
+  }
+
+  100% {
+    opacity: 0.5;
+  }
+}
+
+@media (max-width: 1750px) {
+  .title {
+    font-size: 1.55rem;
+  }
+}
+
+@media (max-width: 1280px) {
+  .title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 950px) {
+  .count p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .featured {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .count {
+    top: 1rem;
+  }
+}

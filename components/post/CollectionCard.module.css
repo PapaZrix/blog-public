@@ -1,0 +1,118 @@
+.bundle {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  border: 1px solid #dedede;
+  margin-top: 1.5rem;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+  background-color: white;
+  overflow: hidden;
+}
+
+.bundle h2 {
+  transition: all 0.5s ease-in-out;
+}
+
+.bundle:hover h2 {
+  color: #0a9e01;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  height: 15rem;
+  width: 25%;
+  position: relative;
+}
+
+.right {
+  padding: 0.5rem 0;
+  flex: 1;
+  text-align: center;
+  position: relative;
+}
+
+.buttons {
+  position: absolute;
+  right: 1rem;
+  bottom: 0.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.author {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.right p > span {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.length {
+  margin: 0.5rem 0;
+}
+
+.description {
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  max-width: 95%;
+}
+
+.open {
+  margin: 0 auto;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  cursor: pointer;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.caret {
+  transition: all 0.25s ease-in-out;
+}
+
+.caret.rotate {
+  transform: rotate(180deg);
+}
+
+@media (max-width: 640px) {
+  .bundle {
+    gap: 0;
+    border-radius: 0;
+  }
+
+  .left {
+    flex: 1;
+  }
+
+  .right {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    flex: 0;
+  }
+
+  .right h2 {
+    font-size: 2rem;
+  }
+
+  .author,
+  .length,
+  .open p {
+    font-size: 1.5rem;
+  }
+
+  .author,
+  .open p {
+    text-wrap: nowrap;
+  }
+}

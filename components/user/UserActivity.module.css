@@ -1,0 +1,104 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.wrapper {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.comment {
+  padding: 0.5rem;
+  border-bottom: 1px solid gray;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: white;
+  font-size: 1rem;
+}
+
+.left {
+  padding: 0.5rem;
+}
+
+.image {
+  width: 3rem;
+  height: 3rem;
+}
+
+.votes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  margin-top: 0.5rem;
+}
+
+.right {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.5rem;
+}
+
+.top {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.name {
+  font-weight: 600;
+}
+
+.date {
+  color: gray;
+}
+
+.content {
+  max-width: max-content;
+}
+
+.ref {
+  font-size: 0.85rem;
+}
+
+.link {
+  color: gray;
+}
+
+.link:hover {
+  color: #0a9e01;
+}
+
+.activity {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: center;
+}
+
+.activity p {
+  font-size: 1.25rem;
+}
+
+@media (max-width: 640px) {
+  .container {
+    margin: 2rem 0;
+  }
+
+  .wrapper {
+    margin-bottom: 2rem;
+  }
+
+  .gif {
+    height: 20rem;
+    width: 50rem;
+  }
+}

@@ -1,0 +1,261 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 90%;
+}
+
+body {
+  background-color: #f7f7f7;
+  font-family: 'Open Sans', sans-serif;
+}
+
+main {
+  min-height: 100vh;
+}
+
+main::after {
+  background: linear-gradient(85deg, #f7f7f7, #0a9e01);
+  background-size: 1000% 1000%;
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: all 0.35s ease;
+  animation: radiate 5.5s ease-in-out infinite alternate;
+  z-index: -5;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+p {
+  white-space: pre-wrap;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a,
+button {
+  font-family: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+header {
+  background-color: white;
+  border-bottom: 1px solid #dedede;
+}
+
+.spinner {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading {
+  height: calc(100vh - 91px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.editor-container {
+  margin-top: 1rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.editor-container > * {
+  flex: 1 0 auto;
+}
+
+.rdw-editor-main {
+  border: 1px solid lightgray;
+  padding: 1rem;
+  height: 50rem !important;
+  margin-top: 1rem;
+}
+
+div.DraftEditor-root {
+  padding: 20px;
+  font-size: 18px;
+}
+
+div.public-DraftEditor-content > :first-child > div:first-child {
+  margin-top: -1rem;
+}
+
+div.public-DraftEditor-content > :first-child > div:last-child {
+  padding-bottom: 2rem;
+}
+
+#form {
+  height: 100%;
+}
+
+.excerpt {
+  font-size: 1rem;
+}
+
+span > * {
+  line-height: 1.6;
+}
+
+.content {
+  display: block;
+}
+
+.content > *:not(:first-child) {
+  display: none;
+}
+
+.full-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  font-family: inherit;
+  font-size: 1.05rem;
+}
+
+.full-content p {
+  line-height: 1.6;
+}
+
+.full-content img {
+  max-width: 100%;
+  border-radius: 0.5rem;
+}
+
+.full-content h2 {
+  font-size: 1.5rem;
+}
+
+.full-content ul {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+.full-content ol {
+  list-style-position: inside;
+}
+
+.full-content ol,
+.full-content ul {
+  padding-left: 1.5rem;
+}
+
+@keyframes radiate {
+  0% {
+    opacity: 0.12;
+  }
+
+  20% {
+    opacity: 0.18;
+  }
+
+  40% {
+    opacity: 0.25;
+  }
+
+  60% {
+    opacity: 0.32;
+  }
+
+  80% {
+    opacity: 0.38;
+  }
+
+  100% {
+    opacity: 0.45;
+  }
+}
+
+@media (max-width: 1550px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+@media (max-width: 1300px) {
+  html {
+    font-size: 70%;
+  }
+}
+
+@media (max-width: 1280px) {
+  .editor-container {
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 1rem;
+  }
+
+  .rdw-editor-toolbar {
+    font-size: 10px !important;
+  }
+
+  .rdw-option-wrapper {
+    width: 17.5px !important;
+    min-width: auto !important;
+  }
+
+  .rdw-option-wrapper img {
+    width: 10px;
+  }
+
+  .rdw-block-dropdown {
+    width: 80px !important;
+  }
+
+  .rdw-dropdown-wrapper {
+    height: 20px !important;
+  }
+
+  .rdw-image-imagewrapper {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .rdw-image-imagewrapper img {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+
+@media (max-width: 950px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 640px) {
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 110;
+  }
+
+  .full-content {
+    font-size: 1.5rem;
+  }
+}
