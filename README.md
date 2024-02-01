@@ -15,9 +15,22 @@ Press To Interact is a full-stack video game blog that I made for a friend of mi
 
 ## Features
 
-### Authentication - Users
+- ### Users
 
-- role based authentication - users can either have the default user role or an admin role, based on their role, the layout differs
+Role based authentication - users can either have the default user role or an admin role, based on their role, the layout differs
 
 ![Example of default user dropdown menu options](/public/readme/user.png)
+
 ![Example of an admin dropdown menu options](/public/readme/admin.png)
+
+Normal users have the option to review their activity on the website as well as customize their profile look by changing their: username, about text, location and lastly uploading an avatar image
+
+![Activity section of a user](/public/readme/activity.png)
+
+![Settings section of a user](/public/readme/settings.png)
+
+Comparatively, the admin of the website has both a post editor as well as an admin dashboard where he can check out all his posts, collections and website users and make edits if necessary.
+
+![Admin post editor](/public/readme/editor.png)
+
+![Admin dashboard](/public/readme/dashboard.png)
