@@ -13,24 +13,30 @@ Press To Interact is a full-stack video game blog that I made for a friend of mi
 - [Uploadthing](https://uploadthing.com/) - storing image uploads
 - [React-Query](https://tanstack.com/query/v4/) - hydrating SSR pages
 
+Hosted on Vercel. Includes server side rendered pages for better SEO and overall better performance.
+
+![Lighthouse results](/public/readme/lighthouse.png)
+
 ## Features
 
 - ### Users
 
-Role based authentication - users can either have the default user role or an admin role, based on their role, the layout differs
+Role based authentication, authentication protected routes - users can either have the default user role or an admin role, based on their role, the layout differs
 
-![Example of default user dropdown menu options](/public/readme/user.png)
-
-![Example of an admin dropdown menu options](/public/readme/admin.png)
+|               User Dropdown Menu               |               Admin Dropdown Menu                |
+| :--------------------------------------------: | :----------------------------------------------: |
+| ![User dropdown menu](/public/readme/user.png) | ![Admin dropdown menu](/public/readme/admin.png) |
 
 Normal users have the option to review their activity on the website as well as customize their profile look by changing their: username, about text, location and lastly uploading an avatar image
 
-![Activity section of a user](/public/readme/activity.png)
-
-![Settings section of a user](/public/readme/settings.png)
+![Activity and settings sections of a user](/public/readme/user.gif)
 
 Comparatively, the admin of the website has both a post editor as well as an admin dashboard where he can check out all his posts, collections and website users and make edits if necessary.
 
-![Admin post editor](/public/readme/editor.png)
+![Admin post editor and dashboard](/public/readme/admin.gif)
 
-![Admin dashboard](/public/readme/dashboard.png)
+Registered users can leave their thoughts on each post as well like other users comments.
+
+![User leaving a comment](/public/readme/comment.gif)
+
+You like video games too? Hop on to [PressToInteract](https://presstointeract.com/), make an account, leave your thoughts on some of the game releases we cover!
