@@ -37,4 +37,8 @@ Hosted on Vercel. Includes server side rendered pages for better SEO and overall
 
 ![User leaving a comment](/public/readme/comment.gif)
 
+## Work in progress
+
+- We'll be adding a search functionality to the blog soon as the number of posts increases on a weekly basis
+
 You like video games too? Hop on to [PressToInteract](https://presstointeract.com/), make an account, leave your thoughts on some of the game releases we cover!
