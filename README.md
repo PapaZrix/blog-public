@@ -2,6 +2,8 @@
 
 Press To Interact is a full-stack video game blog that I made for a friend of mine (Fabijan Balen) with the goal of giving him a platform to express his thoughts and feelings on some of his favorite game releases.
 
+You like video games too? Hop on to [PressToInteract](https://presstointeract.com/), make an account, leave your thoughts on some of the game releases we cover!
+
 ![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](/public/readme//homepage.png)
 
 ## Built with
@@ -40,5 +42,3 @@ Hosted on Vercel. Includes server side rendered pages for better SEO and overall
 ## Work in progress
 
 - We'll be adding a search functionality to the blog soon as the number of posts increases on a weekly basis
-
-You like video games too? Hop on to [PressToInteract](https://presstointeract.com/), make an account, leave your thoughts on some of the game releases we cover!
